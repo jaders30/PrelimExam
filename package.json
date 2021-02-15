@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "heroku-postbuild": "cd orbit-app && npm install && npm install --only=dev --no-shrinkwrap && npm run",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
