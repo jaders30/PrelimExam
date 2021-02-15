@@ -137,7 +137,7 @@ const attachUser = (req, res, next) => {
 app.use(attachUser);
 
 const requireAuth = jwt({
-  secret: process.env.JWT_SECRET,
+  secret: secret123,
   audience: "api.orbit",
   issuer: "api.orbit",
 });
