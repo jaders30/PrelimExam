@@ -1,5 +1,5 @@
 require("dotenv").config();
-var PORT = process.env.PORT || 5000;
+const port = Process.env.PORT || 3000;
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -300,7 +300,7 @@ async function connect() {
     console.log("Mongoose error", err);
   }
   app.listen(3001);
-  console.log("API listening on localhost:3001");
+  console.log(`API listening on {PORT}`);
 }
 
 connect();
