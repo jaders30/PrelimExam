@@ -299,7 +299,7 @@ async function connect() {
   } catch (err) {
     console.log("Mongoose error", err);
   }
-  app.listen(3001);
+  app.listen(process.env.PORT || 3001);
   console.log(`API listening on {PORT}`);
 }
 
